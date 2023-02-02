@@ -15,7 +15,14 @@ public class Nation
     private ArrayList<People> population = new ArrayList<>();
     private ArrayList<People> livingPopulation = new ArrayList<>();
 
-
+    /**
+     * This method creates 5 in nationCount and
+     * adds that to nationName through the string name.
+     * for loop distributes life points between the 5 nations and adds them
+     * population.
+     * @param name
+     * @param lifePoints
+     */
     public Nation(String name, int lifePoints)
     {
         nationCount++;
@@ -29,12 +36,18 @@ public class Nation
         livingPopulation.addAll(population);
     }
 
-
+/**
+ * returns true if lifePoints greater than 0 and false if lifePoints less than 0
+ */
     public Boolean isNationAlive()
     {
         return (nationLifePoints > 0);
     }
 
+    /**
+     * Gets the population of the tribe
+     * @return livingPopulation
+     */
     public ArrayList<People> getNationPopulation()
     {
         nationLifePoints = 0;
@@ -52,6 +65,9 @@ public class Nation
         return livingPopulation;
     }
 
+    /**
+     * @return nationName
+     */
 
     public String getNationName()
     {
@@ -59,6 +75,9 @@ public class Nation
     }
 
 
+    /**
+     * prints tribeName with the number of alive and dead members
+     */
     public void printTribesStatus()
     {
         for(int tribe = 0; tribe < 1; tribe++)
