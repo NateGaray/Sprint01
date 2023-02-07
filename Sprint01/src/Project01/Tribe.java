@@ -1,10 +1,5 @@
 package Project01;
-import java.util.Collection;
-import java.util.Collections;
-import java.io.StringBufferInputStream;
 import java.util.ArrayList;
-import Project01.People;
-import Project01.PeopleType;
 
 public class Tribe
 {
@@ -15,7 +10,11 @@ public class Tribe
     private ArrayList<People> livingMembers = new ArrayList<>();
 
     /**
-     *This method will add new members to the specific tribe and a people type
+     * This method will add new members to the specific tribe using for loops
+     * The PeopleType is also specified
+     * @param nation
+     * @param tribe
+     * @param lifePoints
      */
     public Tribe(String nation, String tribe, int lifePoints)
     {
@@ -26,12 +25,20 @@ public class Tribe
             if(i % 2 == 0)
                 members.add(new People(nationName, tribeName, PeopleType.warrior, tribeLifePoints / 2));
             else
-                members.add(new People(nationName, tribeName, PeopleType.wizzard, tribeLifePoints / 2));
+                members.add(new People(nationName, tribeName, PeopleType.wizard, tribeLifePoints / 2));
         for(int i = 0; i < members.size(); i++)
             livingMembers.addAll(members);
     }
 
-
+    /**
+     * First the livingMembers ArrayList is cleared
+     * The tribeLifePints is set to 0
+     * Next there is a for loop that goes through the members ArrayList
+     * An if statement within the for loop checks if each person is alive,
+     * Alive people are added to the livingMembers ArrayList
+     * Finally the tribeLifePoints is increased
+     * @return livingMembers
+     */
     public ArrayList<People> getLivingTribeMembers()
     {
         livingMembers.clear();
@@ -48,6 +55,7 @@ public class Tribe
         //System.out.println(livingMembers);
         return livingMembers;
     }
+
     /*
     public void printMembers()
     {
@@ -59,7 +67,8 @@ public class Tribe
 */
 
     /**
-     *returns number of living in a tribe
+     * returns number of living members in a tribe
+     * @return livingMembers.size()
      */
     public int getTribeSize()
     {
@@ -67,7 +76,8 @@ public class Tribe
     }
 
     /**
-     *returns true is tribeLifePoints is greater than 0 and false otherwise
+     * returns true is tribeLifePoints is greater than 0 and false otherwise
+     * @return (tribeLifePoints > 0)
      */
     public Boolean isTribeAlive()
     {
@@ -75,7 +85,7 @@ public class Tribe
     }
 
     /**
-     *returns tribeLifePoints
+     * @return tribeLifePoints
      */
     public int getTribeLifePoints()
     {
@@ -83,7 +93,7 @@ public class Tribe
     }
 
     /**
-     *returns tribeName
+     * @return tribeName
      */
     public String getTribeName()
     {
