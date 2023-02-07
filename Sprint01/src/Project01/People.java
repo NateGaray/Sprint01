@@ -13,12 +13,12 @@ public class People
 
     /**
      * This constructor is just creating an instance of the class and
-     * initializing all the parameters.
+     * initializing the data members.
      * @param nation
      * @param tribe
      * @param person
      * @param lifePoints
-     * */
+     */
     public People(String nation, String tribe, PeopleType person, int lifePoints)
     {
         myNation = nation;
@@ -27,6 +27,7 @@ public class People
         myDescription = me.getDescription();
         myLifePoints = lifePoints;
     }
+
     /**
      * This method is just getting the type of person
      * from the PeopleType class
@@ -35,45 +36,50 @@ public class People
     {
         return me;
     }
+
     /**
      * This method is getting the tribe
      * @return myTribe
-     * */
+     */
     public String getTribe()
     {
         return myTribe;
     }
+
     /**
      * This method is getting the nation
      * @return myNation
-     * */
+     */
     public String getNation()
     {
         return myNation;
     }
+
     /**
      * This method is seeing if the person is alive by
-     * @return myLifePoints. It returns true if myLivePoints is greater than 0,
-     * and then it returns false if myLifePoints is less than 0.
-     * */
+     * @return myLifePoints. It returns true if myLifePoints is greater than 0,
+     * and then it returns false if myLifePoints is 0.
+     */
     public Boolean isPersonAlive()
     {
         return (myLifePoints > 0);
     }
+
     /**
      * This method is getting myLifePoints
      * @return MyLifePoints
-     * */
+     */
     public int getLifePoints()
     {
         return myLifePoints;
     }
+
     /**
      * This method is seeing if myNation is equal to the other
      * @param otherPerson and if it is they will go to war and
      * if they aren't then it moves down to the else statement
      * and this is where nothing will happen. There will be piece.
-     * */
+     */
     public void encounterStrategy(People otherPerson)
     {
         if(myNation == otherPerson.getNation())
