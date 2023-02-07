@@ -14,6 +14,9 @@ public class Tribe
     private ArrayList<People> members = new ArrayList<>();
     private ArrayList<People> livingMembers = new ArrayList<>();
 
+    /**
+     *This method will add new members to the specific tribe and a people type
+     */
     public Tribe(String nation, String tribe, int lifePoints)
     {
         nationName = nation;
@@ -27,6 +30,7 @@ public class Tribe
         for(int i = 0; i < members.size(); i++)
             livingMembers.addAll(members);
     }
+
 
     public ArrayList<People> getLivingTribeMembers()
     {
@@ -54,23 +58,33 @@ public class Tribe
     }
 */
 
-
+    /**
+     *returns number of living in a tribe
+     */
     public int getTribeSize()
     {
         return livingMembers.size();
     }
 
+    /**
+     *returns true is tribeLifePoints is greater than 0 and false otherwise
+     */
     public Boolean isTribeAlive()
     {
         return (tribeLifePoints > 0);
     }
 
-
+    /**
+     *returns tribeLifePoints
+     */
     public int getTribeLifePoints()
     {
         return tribeLifePoints;
     }
 
+    /**
+     *returns tribeName
+     */
     public String getTribeName()
     {
         return tribeName;
