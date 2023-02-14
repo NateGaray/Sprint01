@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import Project01.Tribe;
 import Project01.People;
 
+/**
+ * This class creates a nations and all its attributes
+ * Every numerical value is set to 0
+ * Every ArrayList is cleared
+ */
 public class Nation
 {
     private int nationLifePoints;

@@ -1,5 +1,10 @@
 package Project01;
 
+/**
+ * This enum determines what type of play a person is
+ * There are two types of people a warrior and wizard
+ */
+
 public enum PeopleType
 {
     warrior ("Soldier"),
