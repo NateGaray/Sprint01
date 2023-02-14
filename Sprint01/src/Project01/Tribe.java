@@ -1,6 +1,11 @@
 package Project01;
 import java.util.ArrayList;
 
+/**
+ * This class creates a tribe that includes the tribe name,
+ * nation name, its members(living or not) and the points
+ * dedicated to each team
+ */
 public class Tribe
 {
     private String nationName;
