@@ -5,6 +5,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.*;
 
+/**
+ * This class is the brains of the game
+ * This class makes everything work together
+ * This is where the game is actually played
+ */
 public class PlayGame
 {
 
