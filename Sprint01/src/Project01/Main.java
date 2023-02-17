@@ -8,7 +8,8 @@ import Project01.Tribe;
 import Project01.PlayGame;
 
 
-public class Main {
+public class Main
+{
 
 
     public static void main(String[] args)
