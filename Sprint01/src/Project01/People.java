@@ -5,7 +5,7 @@ import Project01.PeopleType;
 /**
  * This class creates a person and all its attributes
  * The nation and tribe for the person is set
- * myLifePoints is et to 0
+ * myLifePoints is set to 0
  */
 
 public class People

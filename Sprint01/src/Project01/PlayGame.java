@@ -15,7 +15,7 @@ public class PlayGame
 
     ArrayList<Nation> allLivingNations = new ArrayList<>();
     ArrayList<People> worldLivingPopulation = new ArrayList<>();
-    Random generator;
+     Random generator;
 
     /**
      * The PlayGame constructor creates a variable of type date
