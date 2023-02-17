@@ -42,7 +42,8 @@ public class Nation
     }
 
 /**
- * returns true if lifePoints greater than 0 and false if lifePoints less than 0
+ * Returns true if lifePoints greater than 0 and false if lifePoints less than 0
+ * Checks if the current nation is alive
  */
     public Boolean isNationAlive()
     {
@@ -50,7 +51,7 @@ public class Nation
     }
 
     /**
-     * Gets the population of the tribe
+     * Gets the population of the nation
      * @return livingPopulation
      */
     public ArrayList<People> getNationPopulation()
@@ -72,6 +73,7 @@ public class Nation
 
     /**
      * @return nationName
+     * Will tell you the name of the current nation
      */
 
     public String getNationName()
