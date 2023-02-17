@@ -6,8 +6,11 @@ import java.util.Collections;
 import Project01.Nation;
 import Project01.Tribe;
 import Project01.PlayGame;
-
-
+/**
+ * This function sets the game up to include two nations with five tribes and two people per tribe.
+ * It also sets up the life points and allocates them to the nations,tribes and people
+ * This functions also plays the game until there is a winner
+ */
 public class Main {
 
 
