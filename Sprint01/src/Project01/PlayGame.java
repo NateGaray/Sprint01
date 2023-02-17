@@ -69,7 +69,7 @@ public class PlayGame
      * This method checks if the two nations are the same
      * If the two nations are not the same, the players encountered each other
      * When this happens, each player takes a random amount of damage
-     * The damage for each player is passes into the reduceLifePoints method
+     * The damage for each player is passes into the reduceLifePoints method ( this is created randomly)
      * Finally there is a print statement that tells the players how much damage they take
      * @param p1
      * @param p2
