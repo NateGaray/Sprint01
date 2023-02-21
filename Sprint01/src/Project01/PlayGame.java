@@ -19,7 +19,7 @@ public class PlayGame
 
     /**
      * The PlayGame constructor creates a variable of type date
-     * The date then gets a randomly generated time
+     * The date then gets a randomly generated
      */
     public PlayGame()
     {
@@ -29,7 +29,7 @@ public class PlayGame
 
     /**
      * First this method clears the ArrayList called worldLivingPopulation
-     * Then the method uses a for loop to loop through an ArrayList of type Nation
+     * Then the method uses a for-loop to loop through an ArrayList of type Nation
      * each iteration of the loop the population of the nation is added
      * @param nations
      */
@@ -47,8 +47,8 @@ public class PlayGame
     /**
      * This method uses the getWorldLivingPopulation
      * Then it clears the ArrayList called allLivingNations
-     * Next the method goes through a for loop, looping through the nations ArrayList
-     * If the nation is alive it is added to the allLivingNations ArrayList
+     * Next the method goes through a for-loop, looping through the nations ArrayList
+     * If the nation is still alive it is added to the allLivingNations ArrayList
      * @param nations
      */
     public void getAllLivingNations(ArrayList<Nation> nations)
@@ -69,7 +69,7 @@ public class PlayGame
      * This method checks if the two nations are the same
      * If the two nations are not the same, the players encountered each other
      * When this happens, each player takes a random amount of damage
-     * The damage for each player is passes into the reduceLifePoints method ( this is created randomly)
+     * The damage for each player is passes into the reduceLifePoints method (in the people class)
      * Finally there is a print statement that tells the players how much damage they take
      * @param p1
      * @param p2
@@ -91,16 +91,12 @@ public class PlayGame
 
 
     /**
-     * This method gets all the living nations
-     * A while loop is used to determine if the size of the allLivingNations ArrayList
-     * is greater than 1 and the index of the worldLivingPopulation ArrayList is less than the size of the ArrayList
-     * A do while loop is nested inside the outer while loop. The do gets the living population of player 2.
-     * The while checks if the index of player 1 is the same as the index of player 2. If they are the same
-     * there is an encounter.
-     * The method gets all the living nations
-     * If the size of the allLivingNations ArrayList is less than 2 the while loop breaks. Otherwise, the index is
-     * increased by 1.
-     * Finally, the method returns a boolean if the size of the allLivingNations ArrayList is less than 2
+     * This is used to play the rounds of the game
+     * It starts off at round 0 and increments if the livingNation size is greater than 2.
+     * After looping through all the nations, A do while loop checks the int generator of p1 and p2
+     * if the index of player 1 is the same as the index of player 2, there is an encounter
+     * It keeps doing this until the size of livingNations is less than 2
+     * The method will return the winning nation through the getWinner Method
      * @param nations
      * @return
      */
@@ -130,9 +126,8 @@ public class PlayGame
     }
 
     /**
-     * If the size of the allLivingNations ArrayList is 0, there is no winner and "No Winner!" is returned as a string
-     * Otherwise, the name of the winning nation is returned as a string
-     * @return
+     * This method will return the name of the winning nation after it satisfies the conditions in the
+     * playOneRound method above or return no winner.
      */
     public String getWinner()
     {
