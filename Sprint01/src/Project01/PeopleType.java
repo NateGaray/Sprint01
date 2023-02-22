@@ -18,6 +18,9 @@ public enum PeopleType
         description = types;
     }
 
+    /**
+     * @return description of the people type
+     */
     public String getDescription()
     {
         return description;

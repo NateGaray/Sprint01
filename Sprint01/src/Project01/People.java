@@ -113,6 +113,10 @@ public class People
     }
 
 
+    /**
+     *toString result of the nation, tribe, description and the lifepoints associated with it
+     * @return result
+     */
     public String toString()
     {
         String result = new String( myNation + "\t" +  myTribe + "\t" + me + "\t" + myDescription + "\t" + myLifePoints);

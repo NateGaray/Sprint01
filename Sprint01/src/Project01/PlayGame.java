@@ -18,8 +18,7 @@ public class PlayGame
      Random generator;
 
     /**
-     * The PlayGame constructor creates a variable of type date
-     * The date then gets a randomly generated
+     * Generates a date and time for the game being played
      */
     public PlayGame()
     {

@@ -51,7 +51,7 @@ public class Nation
     }
 
     /**
-     * Gets the population of the nation
+     * Gets the living population of the nation
      * @return livingPopulation
      */
     public ArrayList<People> getNationPopulation()
@@ -101,6 +101,10 @@ public class Nation
         }
     }
 
+    /**
+     * toString name of the nation
+     * @return result
+     */
     public String toString()
     {
         String result = "\0";

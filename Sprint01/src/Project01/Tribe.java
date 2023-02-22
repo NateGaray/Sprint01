@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 /**
  * This class creates a tribe that includes the tribe name,
- * nation name, its members(living or not) and the points
- * dedicated to each team
+ * nation name, its members(living or not) and the tribe lifePoints
+ * dedicated to each tribe
  */
 public class Tribe
 {
@@ -15,8 +15,9 @@ public class Tribe
     private ArrayList<People> livingMembers = new ArrayList<>();
 
     /**
-     * This method will add new members to the specific tribe using for loops
-     * The PeopleType is also specified
+     * This method will add a person to a specific tribe
+     * using for loops ;it will then assign that person with a
+     * personType and lifePoints.
      * @param nation
      * @param tribe
      * @param lifePoints
@@ -36,10 +37,10 @@ public class Tribe
     }
 
     /**
+     * This method return the living members of a tribe by using a for loop
+     * to check to see if that person isAlive
      * First the livingMembers ArrayList is cleared
      * The tribeLifePints is set to 0
-     * Next there is a for loop that goes through the members ArrayList
-     * An if statement within the for loop checks if each person is alive,
      * Alive people are added to the livingMembers ArrayList
      * Finally the tribeLifePoints is increased
      * @return livingMembers
@@ -61,7 +62,10 @@ public class Tribe
         return livingMembers;
     }
 
-    /*
+    /**
+     * This method will print the individual members of the tribe to the console
+     * /
+
     public void printMembers()
     {
         for(int i = 0; i < 2; i++)
@@ -105,6 +109,9 @@ public class Tribe
         return tribeName;
     }
 
+    /**
+     * @return toString name of the tribe.
+     */
     public String toString()
     {
         String result = "\0";
